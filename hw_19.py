@@ -10,7 +10,6 @@ class ContentMaker:
         self.url = 'https://raw.githubusercontent.com/netology-code/py-homeworks-db/video/06-orm/fixtures/tests_data.json'
         
     def get_query(self):
-        """Method gets response from server and returns dictionary"""
         try:
             response = requests.get(self.url)
             response.raise_for_status()
